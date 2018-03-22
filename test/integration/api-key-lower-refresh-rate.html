@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spreadsheet Widget</title>
+
+  <script src="../../src/components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <script src="../../src/components/web-component-tester/browser.js"></script>
+
+  <link rel="import" href="../../src/components/rise-google-sheet/rise-google-sheet.html">
+  <link href="../../dist/css/spreadsheet.css" rel="stylesheet"></head>
+
+</head>
+<body>
+
+<div id="mainContainer"></div>
+
+<rise-google-sheet id="rise-google-sheet" refresh="60"></rise-google-sheet>
+
+<script src="../data/spreadsheet-integration-api-key-lower-refresh-rate.js"></script>
+
+
+
+<script src="../../node_modules/widget-tester/mocks/gadget-mocks.js"></script>
+<script type="text/javascript" src="../../dist/js/widget.min.js"></script></body>
+
+<script>
+
+  let server = sinon.fakeServer.create(),
+    googleSheet = document.querySelector("rise-google-sheet");
+
+  server.respondImmediately = true;
+  server.respondWith("GET", "https://sheets.googleapis.com/v4/spreadsheets/xxxxxxxxxx?key=AIzaSyAdX5yRzScPWbRm0FnNcoYxbiLeQo8owwc",
+      [200, { "Content-Type": "application/json" },
+        '{ "sheets": [{ "properties": { "title": "Sheet1" } }] }']);
+
+  suite("Spreadsheet Content", function() {
+
+      test("should set the api key to default", function() {
+        assert.equal(googleSheet.getAttribute("apikey"), "AIzaSyAdX5yRzScPWbRm0FnNcoYxbiLeQo8owwc");
+      });
+
+      test("should set the refresh rate to the default", function() {
+        assert.equal(googleSheet.getAttribute("refresh"), 60);
+      });
+  });
+
+</script>
+
+</body>
+</html>

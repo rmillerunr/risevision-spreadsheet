@@ -1,0 +1,55 @@
+{
+  "name": "widget-google-spreadsheet",
+  "version": "2.0.0",
+  "homepage": "https://github.com/Rise-Vision/widget-google-spreadsheet",
+  "authors": [
+    "Rise Vision"
+  ],
+  "description": "Rise Vision Google Spreadsheet Widget",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "rise-vision",
+    "widget",
+    "ui",
+    "google",
+    "spreadsheet"
+  ],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/components",
+    "test",
+    "reports"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.4.x",
+    "web-component-tester": "5.0.0"
+  },
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-bootstrap": "^0.13.0",
+    "angular-bootstrap-colorpicker": "~3.0.19",
+    "auto-scroll": "https://github.com/Rise-Vision/auto-scroll.git#2.0.1",
+    "google-drive-picker": "https://github.com/Rise-Vision/component-google-drive-picker.git#0.1.2",
+    "gsap": "~1.18.5",
+    "rise-google-sheet": "https://github.com/Rise-Vision/rise-google-sheet.git#2.4.11",
+    "rv-common-i18n": "https://github.com/Rise-Vision/common-i18n.git#1.4.15",
+    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#v1.3.65",
+    "webcomponentsjs": "^0.7.22",
+    "widget-common": "https://github.com/Rise-Vision/widget-common.git#3.4.10",
+    "widget-settings-ui-core": "https://github.com/Rise-Vision/widget-settings-ui-core.git#0.4.3",
+    "widget-settings-ui-components": "https://github.com/Rise-Vision/widget-settings-ui-components.git#3.3.0",
+    "responsive-fixed-data-table": "https://github.com/Rise-Vision/responsive-fixed-data-table.git#^3.1.0"
+  },
+  "resolutions": {
+    "angular": "~1.4.0",
+    "angular-mocks": "~1.4.x",
+    "gsap": "~1.18.5",
+    "jquery": "~2.1.1",
+    "rv-common-style": "v1.3.65"
+  }
+}

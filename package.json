@@ -1,0 +1,73 @@
+{
+  "name": "widget-google-spreadsheet",
+  "version": "2.0.0",
+  "description": "Rise Vision Google Spreadsheet Widget",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "npm run build && gulp test",
+    "build": "gulp build && ./include-deps.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rise-Vision/widget-google-spreadsheet.git"
+  },
+  "author": "Rise Vision",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/Rise-Vision/widget-google-spreadsheet/issues"
+  },
+  "homepage": "https://github.com/Rise-Vision/widget-google-spreadsheet",
+  "devDependencies": {
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.8.0",
+    "bower": "^1.5.3",
+    "chai": "^2.1.2",
+    "chai-as-promised": "^4.3.0",
+    "colors": "~1.0.3",
+    "css-loader": "^0.23.1",
+    "del": "~1.1.1",
+    "enzyme": "^2.3.0",
+    "eslint": "^3.8.1",
+    "eslint-config-idiomatic": "^2.1.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gulp": "^3.9.0",
+    "gulp-bower": "~0.0.10",
+    "gulp-bump": "~0.1.8",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.0",
+    "gulp-minify-css": "0.3.4",
+    "gulp-rename": "~1.2.0",
+    "gulp-sourcemaps": "^1.2.2",
+    "gulp-uglify": "^0.3.1",
+    "gulp-usemin": "0.3.7",
+    "gulp-util": "~2.2.17",
+    "gulp-watch": "^0.6.8",
+    "html-webpack-plugin": "^2.16.0",
+    "imports-loader": "^0.6.5",
+    "jquery": "^3.0.0",
+    "react-addons-test-utils": "^0.14.8",
+    "run-sequence": "^0.3.2",
+    "style-loader": "^0.13.1",
+    "web-component-tester": "5.0.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.2.0",
+    "widget-tester": "git://github.com/Rise-Vision/widget-tester.git#1.7.4"
+  },
+  "optionalDependencies": {
+    "wct-local": "<2.0.16"
+  },
+  "dependencies": {
+    "fixed-data-table": "0.6.3",
+    "react": "0.14.8",
+    "react-dom": "0.14.8",
+    "webfontloader": "^1.6.24"
+  }
+}
